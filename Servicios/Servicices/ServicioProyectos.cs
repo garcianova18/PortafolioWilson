@@ -29,22 +29,22 @@ namespace Servicios.Servicices
                 {
                     Titulo="Agenda Telefonica",
                     Descripcion="En ella almacenamos los contacto de los usuarios, Creada en asp.net core 3.1",
-                    Imagen ="./wwwroot/imagenes/proyectos/AgendaTelefonica.JPG",
+                    Imagen ="AgendaTelefonica.JPG",
                     Url="http://www.agendacgi.somee.com/Electromecanica"
                 },
                  new Proyectos
                 {
-                    Titulo="Agenda Telefonica",
-                    Descripcion="En ella almacenamos los contacto de los usuarios, Creada en asp.net core 3.1",
-                    Imagen ="~/wwwroot/imagenes/proyectos/AgendaTelefonica",
-                    Url="http://www.agendacgi.somee.com/Electromecanica"
+                    Titulo="Blog Personal",
+                    Descripcion="Esta es un blog donde subo contenido de programacion y de tecnologia en general",
+                    Imagen ="blog.png",
+                    Url="https://github.com/garcianova18/BlogPersonal"
                 },
                   new Proyectos
                 {
-                    Titulo="Agenda Telefonica",
-                    Descripcion="En ella almacenamos los contacto de los usuarios, Creada en asp.net core 3.1",
-                    Imagen ="~/wwwroot/imagenes/proyectos/AgendaTelefonica",
-                    Url="http://www.agendacgi.somee.com/Electromecanica"
+                    Titulo="User Ramdom",
+                    Descripcion="Consumiendo la API randomuser para mostrar tarjetas con usuarios y hacer uso de paginación",
+                    Imagen ="randomuserAPI.png",
+                    Url="https://github.com/garcianova18/ConsumiendoWebAPI"
                 }
             };
 

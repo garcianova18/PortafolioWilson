@@ -2,20 +2,20 @@
 
 <section id="Proyectos">
 
-    <div class="col-12 py-5">
+    <div class="col-12 ">
 
 
         <div class="row">
 
-            <h2 class="text-center mb-5 text-primary">Proyectos Recientes</h2>
+            <h2 class="text-center my-5 text-primary">Proyectos Recientes</h2>
 
             @foreach (var item in Model)
             {
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
 
-                    <div class="card text-center shadow p-3">
+                    <div class="card text-center shadow p-3 ">
 
-                        <img src="~/Imagenes/proyectos/AgendaTelefonica.jpg" alt="..." height="200" class="rounded-2 img-thumbnail">
+                        <img src="~/Imagenes/proyectos/@item.Imagen" alt="...  " height="250" class="rounded-2 ">
                         <div class="card-body">
 
                             <h5 class="card-title text-dark">@item.Titulo</h5>
