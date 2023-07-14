@@ -3,7 +3,7 @@
 
     ViewData["Title"] = "Portafolio";
 }
-<div class="row g-0">
+<div class="row ">
 
 
     @*  -------------Seccion de la Presentacion--------------*@
@@ -13,23 +13,29 @@
 
 
     @*  -------------Seccion de las habilidades Skill--------------*@
+    <section class="col-12" id="Habilidades">
 
+        @await Html.PartialAsync("_Habilidades")
 
-    @await Html.PartialAsync("_Habilidades")
+    </section>
 
-
-
-
-    @* ------------Seccion de Proyectos recientes-----------------*@
-
-    @await Html.PartialAsync("_ProyectosRecientes", model:Model.Proyectos)
 
 
     @* ------------Seccion de Proyectos recientes-----------------*@
 
-    @await Html.PartialAsync("_Certificados", model:Model.Certificaciones)
+    <section class="col-12 " id="Proyectos">
+
+        @await Html.PartialAsync("_ProyectosRecientes", model:Model.Proyectos)
+
+    </section>
+
+    @* ------------Seccion de Proyectos recientes-----------------*@
+
+    <section class="col-12  mb-5 " id="Certificados">
+
+        @await Html.PartialAsync("_Certificados", model:Model.Certificaciones)
 
 
-   
+    </section>
 
 </div>

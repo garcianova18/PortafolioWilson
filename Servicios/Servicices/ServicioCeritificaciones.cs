@@ -11,39 +11,39 @@ namespace Servicios.Servicices
     {
         IEnumerable<Certificaciones> Certificaciones();
     }
-    public class ServicioCeritificaciones: IServicioCertificaciones
+    public class ServicioCeritificaciones : IServicioCertificaciones
     {
 
 
         public IEnumerable<Certificaciones> Certificaciones()
         {
 
-            IEnumerable<Certificaciones> certificaciones = new List<Certificaciones>
+            var certificaciones = new List<Certificaciones>
             {
 
                 new Certificaciones
                 {
-                    Titulo = "Ing. De Sistema y Computacion",
-                    Foto = "ASPnetCore.jpg",
+                    Titulo = "ASP.net 5 EntityFramework",
+                    Foto = "ASP.net_Core5.jpg",
                     Centro = "Universidad O&M"
 
                 },
                 new Certificaciones
                 {
-                    Titulo = "Master en C# OOP",
-                    Foto = "sqlserver.jpg",
+                    Titulo = "SQL Server 2019",
+                    Foto = "Sqlserver2019.jpg",
                     Centro = "Udemy"
 
                 },
                 new Certificaciones
                 {
                     Titulo = "Desarrollo Web JavaScript Moderno ",
-                    Foto = "Javascript.jpg",
+                    Foto = "Javascript2018.jpg",
                     Centro = "Udemy"
 
                 }
             };
-          
+
             return certificaciones;
         }
     }

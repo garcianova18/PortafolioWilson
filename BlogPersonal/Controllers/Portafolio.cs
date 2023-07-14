@@ -17,12 +17,11 @@ namespace BlogPersonal.Controllers
         public IActionResult Index()
         {
 
-            var proyectosCertificados = new ProyectosCertificados();
-
-            proyectosCertificados.Proyectos = servicioProyectos.Proyectos();
-
-
-            proyectosCertificados.Certificaciones = certificaciones.Certificaciones();
+            var proyectosCertificados = new ProyectosCertificados
+            {
+                Proyectos = servicioProyectos.Proyectos(),
+                Certificaciones = certificaciones.Certificaciones()
+            };
 
 
 
